@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "typ": "tsc --watch",
+    "watch": "node --watch ./dist/index.js",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "npm-run-all -p typ watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@abtnode/mongoose-nedb": "^1.0.32",
+    "@abtnode/nedb": "^1.0.32",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^4.13.21"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
